@@ -51,12 +51,8 @@ for i in range (3): #(np.shape(wav_sol_air)[0]):
 
     print(shifted_x.shape, y_data.shape)
     
-    # Plot
-    #ax.plot(shifted_x, y_data, label='Original Data')
-    #ax.plot(shifted_x, fitted_curve+np.median(y_data), 'r-', label='Fitted Curve')
-    
   
-    #divide original data by fitted curve
+    #divide original data by fitted curve + plot
     ratio = y_data / fitted_curve
     ax.plot(shifted_x, ratio, 'g--', label='Ratio (Data / Fitted Curve)')
     plt.show()
